@@ -435,17 +435,13 @@ public class PostingList
             return NO_MORE_DOCS;
         } else
         {
-            int docId = backward(target);
-            if (docId == NO_MORE_DOCS)
+            int docId = NO_MORE_DOCS;
+            do
             {
-                return NO_MORE_DOCS;
-            }
-
-            while (bits.get(docId) == false)// 该文档已经被删除了 再找下一个
-            {
-                docId--;
                 docId = backward(target);
-            }
+                target--;
+            } while (bits.get(docId) == false && docId != NO_MORE_DOCS);// 该文档已经被删除了
+                                                                        // 或者没有文档了
 
             return docId;
         }
