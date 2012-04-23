@@ -12,7 +12,8 @@ TODO:
 
 1,一个jvm包含当前系统cpu个invetedindexer
 2,日志回放系统更加完善
-
+3,系统资源统一管理回收使用
+4,使用IntIterator替代现在的查询迭代器 避免拆箱装箱的性能影响
 
 
 
