@@ -1,8 +1,12 @@
+
 ps: 目前上传上来的代码 是开发分支 并不是稳定可运行的 
 jessica是蘑菇街开发实时搜索引擎
 
 
 jessica主要用于蘑菇街图强展现后台数据的实时搜索即展现数据的提供
+
+jessica 目前使用于国内最大的食谱类垂直搜索引擎猫咪叫网站
+猫咪叫 http://www.maomijiao.com
 
 jessica具体实现原理请看 
 http://www.slideshare.net/wangscu/realtimetwittersearch
